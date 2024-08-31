@@ -34,7 +34,7 @@ button {
   text-decoration-line: underline;
   text-decoration-style:wavy  ;
   text-decoration-thickness: 1.5px;
-  text-underline-offset: 15hpx;
+  text-underline-offset: 15px;
   
 }
 button:hover{
