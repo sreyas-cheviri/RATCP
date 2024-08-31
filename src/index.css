@@ -1,0 +1,160 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: #202124; */
+}
+
+/* h1, */
+h2,
+h3,
+input,
+button {
+  font-family: monospace;
+  border-radius: none;
+  border: .5px solid grey;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+  background: #ffff;
+  font-size: larger;
+
+}
+
+.title {
+  font: bolder;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: white;
+  letter-spacing: 8px;
+  /* align-items: center; */
+  text-align: center;
+  /* text-decoration: wavy; */
+  text-decoration-line: underline;
+  text-decoration-style:wavy  ;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 15px;
+  
+}
+button:hover{
+  background: rgba(192, 192, 192, 0.373);
+  /* color: white; */
+  /* border: 3px solid black; */
+
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  /* margin-top: 10px; */
+  padding-top: 100px;
+  flex-direction: column;
+  padding: 100px 50px;
+  background: #000000;
+  gap: 14px;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(157, 157, 157);
+  width: 100%;
+  font-family: monospace;
+}
+
+header button {
+  border-radius: 5px;
+  background: transparent;
+  transition-duration: 200ms;
+  /* border: 1px solid rgb(157, 157, 157); */
+  cursor: pointer;
+}
+
+
+header button,
+header input {
+  padding: 14px 18px;
+  border: 1px solid rgba(128, 128, 128, 0.408);
+  outline: none;
+  background: white;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: monospace;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 14px;
+  background: white;
+  font-family: monospace;
+  flex-wrap: wrap;
+  
+}
+
+
+
+.todoItem p {
+  /* flex-wrap: wrap; */
+  overflow: hidden;
+  flex: 1;
+  word-wrap: break-word;
+ 
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: monospace;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
